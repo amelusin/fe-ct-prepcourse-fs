@@ -10,7 +10,7 @@
 
 ### **📍 NODE**
 
-Recuerda que debes descargar la versión **LTS** de Node.JS, ya que la versión más actual puede tener incompatibilidades.
+Recuerda que debes descargar la versión **LTS** de Node.JS, ya quee la versión más actual puede tener incompatibilidades.
 
 [**LINK DE DESACRGA**](https://nodejs.org/es/)
 
