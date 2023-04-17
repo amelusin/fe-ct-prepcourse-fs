@@ -168,15 +168,14 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if (num>1) {
-      if (num/num===1 && num/1===num) {
-         return true;
-      } else {
-         return false;
-      }
-   } else {
+   if (num <= 1) {
       return false;
    }
+   for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+         return false;
+      }
+   } return true;
 }
 
 function esVerdadero(valor) {
