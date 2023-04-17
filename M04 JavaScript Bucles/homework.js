@@ -84,12 +84,22 @@ function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
+   if (num==10 || num==5){
+      return true
+   } else {
+      return false
+   }
 }
 
 function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar false.
    // Tu código:
+   if (num<50 && num>20){
+      return true 
+   } else {
+      return false
+   }
 }
 
 function esEntero(num) {
@@ -99,6 +109,11 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
+   if (Number.isInteger(num)){
+      return true;
+   } else {
+      return false;
+   }
 }
 
 function fizzBuzz(num) {
@@ -107,6 +122,19 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
+   if (num%3===0){
+      if(num%5===0){
+         return "fizzbuzz";
+      } else {
+         return "fizz";
+      }
+   } else {
+      if(num%5===0){
+         return "buzz";
+      } else {
+         return false;
+      }
+   }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -117,6 +145,20 @@ function operadoresLogicos(num1, num2, num3) {
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
+   if (num1>num2 && num1>num3 && num1>0) {
+      return "Numero 1 es mayor y positivo";
+   }
+   if (num1<0 || num2<0 || num3<0) {
+      return "Hay negativos";
+   }
+   if (num3>num1 && num3>num2) {
+      return (num3+1);
+   }
+   if (num1===0 && num2===0 && num3===0) {
+      return "Error";
+   }else {
+   return false;
+   }
 }
 
 function esPrimo(num) {
@@ -126,6 +168,15 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+   if (num>1) {
+      if (num/num===1 && num/1===num) {
+         return true;
+      } else {
+         return false;
+      }
+   } else {
+      return false;
+   }
 }
 
 function esVerdadero(valor) {
